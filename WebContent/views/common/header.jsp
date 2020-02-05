@@ -65,7 +65,7 @@
 						<ul style="border-right: none;" id="loginMem">
 							<li>
 									<% if( m != null && m.getUserRoles() == 777) { %>
-										<a href="#">Admin Page</a> 
+										<a href="/PETNER/views/admin/admin2.jsp">Admin Page</a> 
 									<% } %>
 								| 	&nbsp;&nbsp; 
 									<a href='/PETNER/mpServlet.mp'  >MyPage</a> 
