@@ -104,8 +104,8 @@
 
 		<!-- Nav Item - Tables -->
 		<li class="nav-item"><a class="nav-link"
-			href="/PETNER/views/admin/admin_user_table.jsp"> <i class="fas fa-fw fa-table"></i> <span>유저
-					목록</span></a></li>
+			href="/PETNER/views/admin/admin_user_table.jsp"> <i class="fas fa-fw fa-table"></i> 
+					<span>유저목록</span></a></li>
 
 		<!-- Divider -->
 		<hr class="sidebar-divider d-none d-md-block">

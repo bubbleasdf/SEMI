@@ -91,7 +91,8 @@
 											<td><%= market.getMarketTel() %></td>
 											<td><%= market.getMarketType() %></td>
 											<td><%= market.getEnDate() %></td>
-											<td><a href="admin_market_modify.jsp"><button>수정</button></a></td>
+											<!-- <td><a href="admin_market_modify.jsp"><button>수정</button></a></td> -->
+											<td><button onclick="selectOne();">수정</button></a></td>
 										</tr>
 										<% } %>
 										
@@ -118,18 +119,16 @@
 	<!-- End of Page Wrapper -->
 	<%@ include file="/views/common/footer.jsp"%>
 	
-		<%-- <script>
-			$(function(){
-				$("#listArea td").mouseenter(function(){
-					$(this).parent().css({"background":"darkgray", "cursor":"pointer"});
-				}).mouseout(function(){
-					$(this).parent().css({"background":"black"});
-				}).click(function(){
-					var bno = $(this).parent().find("input").val();
-					location.href="<%=request.getContextPath()%>/selectOne.bo?bno=" + bno;
+		<script>
+			$(function selectOne(){
+				
+				$("#dataTable td").click(function(){
+					//console.log($(this).parent().children().eq(0).text());
+					var marketId = $(this).parent().children().eq(0).text();
+					location.href="<%=request.getContextPath()%>/selectOne.ad?marketId=" + marketId;
 				});
 			});
-		</script> --%>
+		</script>
 	
 
 </body>
