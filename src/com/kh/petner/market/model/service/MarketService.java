@@ -18,6 +18,7 @@ public class MarketService {
 	 * @return
 	 */
 	public int insertMarket(Market m) {
+		System.out.println("[marketService.insertMarket() 시작]");
 		Connection conn = getConnection();
 		
 		int result = mDao.insertMarket(conn, m);
@@ -28,7 +29,7 @@ public class MarketService {
 			rollback(conn);
 		}
 		close(conn);
-		
+		System.out.println("[marketService.insertMarket() 종료]");
 		return result;
 	}
 
@@ -38,6 +39,8 @@ public class MarketService {
 	 * @return
 	 */
 	public ArrayList<Market> selectList() {
+		System.out.println("[marketService.selectList() 시작]");
+
 		ArrayList<Market> list = new ArrayList<>();
 		
 		Connection conn = getConnection();
@@ -45,7 +48,8 @@ public class MarketService {
 		list = mDao.selectList(conn);
 		
 		close(conn);
-		
+		System.out.println("[marketService.selectList() 종료]");
+
 		return list;
 	}
 

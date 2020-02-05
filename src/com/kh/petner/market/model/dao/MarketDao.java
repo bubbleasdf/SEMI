@@ -72,6 +72,7 @@ public class MarketDao {
 	 * @return
 	 */
 	public ArrayList<Market> selectList(Connection conn) {
+		System.out.println("[marketDao.selectList() 시작]");
 		ArrayList<Market> list = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
@@ -108,7 +109,8 @@ public class MarketDao {
 			close(rset);
 			close(pstmt);
 		}
-		
+		System.out.println("[marketDao.selectList() 종료]");
+
 		return list;
 	}
 

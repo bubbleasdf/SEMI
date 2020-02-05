@@ -39,7 +39,7 @@ public class MarketAddServlet extends HttpServlet {
 		// 파일 업로드 위한 사전 준비작업 //
 		int maxSize = 1024*1024*10;
 		
-		System.out.println("[SERVLET] 시작");
+		System.out.println("[marketAddServlet] 시작");
 		
 		if(!ServletFileUpload.isMultipartContent(request)) {
 			request.setAttribute("msg", "Multipart를 통한 파일 전송이 아닙니다.");
