@@ -22,6 +22,7 @@
 </head>
 <body>
 
+	<%@ include file="/views/common/hyun.jsp"%>
 
 
 	<!-- Sidebar -->

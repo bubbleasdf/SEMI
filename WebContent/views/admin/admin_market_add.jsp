@@ -122,9 +122,12 @@
 							<input type="text" name="marketFour"
 								class="form-control form-control-user" id="mark4"
 								placeholder="필요한 걸 넣어주면 됩니다">
-						</div>
+						</div><br>
 						<div>
-							<input type="file" name="file" id="file">file로 input타입 잡아줄 것! 사진파일 올리기
+							<label>메인 사진 &nbsp; </label><input type="file" name="mainFile" id="mainFile">
+						</div><br>
+						<div>
+							<label>기타 사진 &nbsp; </label><input type="file" name="subFile" id="subFile">
 						</div>
 						<br> <br>
 

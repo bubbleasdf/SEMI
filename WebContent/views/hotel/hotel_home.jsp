@@ -20,9 +20,9 @@
 	<!--
 			CSS
 			============================================= -->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="/PETNER/resources/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/PETNER/resources/css/bootstrap.css">
+    <link rel="stylesheet" href="/PETNER/resources/css/main.css">
     <style>
 		
     .overlay {
@@ -172,10 +172,11 @@
 			<% for(int i=0; i<4; i++) { %>
             <div class="col-md-6">
                <div class="single-newss card">
-                  <img class="card-top-img " height="400px" src="/PETNER/resources/img/hotel/hop_img2.jpeg" alt="hospital image">
+                  <img class="card-top-img " height="400px" src="/PETNER/resources/img/hotel/hop_img2.jpeg" 
+                  alt="hospital image">
                   <div class="card-body">
                      <h4 class="card-title">
-                        <a href="hotel_information.html">
+                        <a href="hotel_information.jsp">
                            <%= i %>
                            
                         </a>
@@ -189,7 +190,7 @@
                         서울시 강남구
                         <br>이용시간 평일 00:00 ~ 24:00<br>
                         연중휴무</p>
-                        <a href="hotel_information.html" class="primary-btn header-btn text-capitalize mt-10" style="float: right;">예약하기</a>
+                        <a href="hotel_information.jsp" class="primary-btn header-btn text-capitalize mt-10" style="float: right;">예약하기</a>
                   </div>
                </div>
                 </div>
