@@ -99,9 +99,9 @@
 						<li><a href="/PETNER/views/hospital/hospital_home.jsp">HOSPITAL</a>
 						</li>
 						<li><a href="/PETNER/views/beauty/beauty_home.jsp">BEAUTY</a></li>
-						<li class="menu-has-children"><a href="/PETNER/views/board/notice.jsp">NOTICE</a>
+						<li class="menu-has-children"><a>NOTICE</a>
 							<ul>
-								<li><a href="/PETNER/views/board/notice.jsp">NOTICE</a></li>
+								<li><a href="/PETNER/NoticeList.go">NOTICE</a></li>
 								<li><a href="/PETNER/views/board/petner_faq.jsp">FAQ</a></li>
 								<li><a href="/PETNER/views/board/qna.jsp">Q&A</a></li>
 							</ul>
