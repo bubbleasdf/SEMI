@@ -7,6 +7,7 @@ public class MarketDetail implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -2824195414268411713L;
+
 	private String marketId;          // 매장별 id
 	private String marketCheck;       // 매장 특징
 	private String marketPhone;       // 매장 연락번호
@@ -95,6 +96,5 @@ public class MarketDetail implements Serializable{
 				+ ", marketPhotoDetail=" + marketPhotoDetail + ", marketSub=" + marketSub + ", marketBus=" + marketBus
 				+ ", marketCar=" + marketCar + "]";
 	}
-	
 
 }

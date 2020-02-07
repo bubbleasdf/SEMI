@@ -8,6 +8,7 @@ public class Market_hr implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -1963761637303018573L;
+
 	private String marketId;      // 매장별 id
 	private String marketEmail;   // 매장 이메일
 	private String marketPwd;     // 매장 비밀번호
@@ -155,8 +156,6 @@ public class Market_hr implements Serializable{
 				+ ", marketPhoto=" + marketPhoto + ", marketdate=" + marketdate + "]";
 	}
 
-	
-	
 	
 	
 }

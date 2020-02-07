@@ -19,13 +19,13 @@
 }
 
 .banner-area2 {
-	background: url(/petner/resources/img/hotel2.jpg) no-repeat center;
+	background: url(/PETNER/resources/img/hotel2.jpg) no-repeat center;
 	background-size: cover;
 	min-height: 420px;
 }
 
 .blog-banner-area2 {
-	background: url(/petner/resources/img/bath.jpg) no-repeat center fixed;
+	background: url(/PETNER/resources/img/bath.jpg) no-repeat center fixed;
 	background-size: cover;
 	min-height: 420px;
 }
@@ -208,8 +208,8 @@
 
 	<!--hyon_경로표시부분-->
 	<div class="way_wrap">
-		<a href="/petner/index.jsp"><img
-			src="/petner/resources/img/home_icon.png"> HOME </a>> <a
+		<a href="/PETNER/index.jsp"><img
+			src="/PETNER/resources/img/home_icon.png"> HOME </a>> <a
 			href="hotel_home.jsp"><span> HOTEL</span></a> > <a
 			href="hotel_information.jsp"><span>  케이에이치애견호텔</span></a>
 	</div>
@@ -224,12 +224,12 @@
 					<div class="col-md-6">
 						<div style="height: 400px; width: 500px;">
 							<ul class="bxslider">
-								<li><img src="/petner/resources/img/hotel4.jpg"
+								<li><img src="/PETNER/resources/img/hotel4.jpg"
 									style="height: 400px; width: 500px;" /></li>
-								<li><img src="/petner/resources/img/hotel3.jpg"
+								<li><img src="/PETNER/resources/img/hotel3.jpg"
 									style="height: 400px; width: 500px;" /></li>
 
-								<li><img src="/petner/resources/img/hop_img3.jpeg"
+								<li><img src="/PETNER/resources/img/hop_img3.jpeg"
 									style="height: 400px; width: 500px;" /></li>
 
 							</ul>
@@ -245,13 +245,13 @@
 							<p>
 								<!--이미지 슬라이드 적용시켜야함-->
 							<ul>
-								<li><img class="plus" src="/petner/resources/img/plus2.png">&nbsp;
+								<li><img class="plus" src="/PETNER/resources/img/plus2.png">&nbsp;
 									산책서비스</li>
-								<li><img class="plus" src="/petner/resources/img/plus2.png">&nbsp;
+								<li><img class="plus" src="/PETNER/resources/img/plus2.png">&nbsp;
 									목욕</li>
-								<li><img class="plus" src="/petner/resources/img/plus2.png">&nbsp;
+								<li><img class="plus" src="/PETNER/resources/img/plus2.png">&nbsp;
 									스파</li>
-								<li><img class="plus" src="/petner/resources/img/plus2.png">&nbsp;
+								<li><img class="plus" src="/PETNER/resources/img/plus2.png">&nbsp;
 									24시 운영</li>
 							</ul>
 							</p>
@@ -273,13 +273,6 @@
 								<button onclick="">전화 문의</button>
 							</div>
 
-							<ul class="list social_details">
-								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a href="#"><i class="fa fa-behance"></i></a></li>
-								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-							</ul>
 						</div>
 					</div>
 				</div>
@@ -346,7 +339,7 @@
 										<div class="single-comment justify-content-between d-flex">
 											<div class="user justify-content-between d-flex">
 												<div class="thumb">
-													<img src="/petner/resources/img/user_icon.png" alt="">
+													<img src="/PETNER/resources/img/user_icon.png" alt="">
 												</div>
 												<div class="desc">
 													<h5>
@@ -367,7 +360,7 @@
 										<div class="single-comment justify-content-between d-flex">
 											<div class="user justify-content-between d-flex">
 												<div class="thumb">
-													<img src="/petner/resources/img/user_icon.png" alt="">
+													<img src="/PETNER/resources/img/user_icon.png" alt="">
 												</div>
 												<div class="desc">
 													<h5>
@@ -388,7 +381,7 @@
 										<div class="single-comment justify-content-between d-flex">
 											<div class="user justify-content-between d-flex">
 												<div class="thumb">
-													<img src="/petner/resources/img/user_icon.png" alt="">
+													<img src="/PETNER/resources/img/user_icon.png" alt="">
 												</div>
 												<div class="desc">
 													<h5>
@@ -410,7 +403,7 @@
 										<div class="single-comment justify-content-between d-flex">
 											<div class="user justify-content-between d-flex">
 												<div class="thumb">
-													<img src="/petner/resources/img/user_icon.png" alt="">
+													<img src="/PETNER/resources/img/user_icon.png" alt="">
 												</div>
 												<div class="desc">
 													<h5>

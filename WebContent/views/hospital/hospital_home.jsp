@@ -18,7 +18,7 @@
     <style>
 
     .blog-banner-area {
-        background: url(/PETNER/resources/img/hospital/hospital_home1.jpg) no-repeat center fixed !important;
+        background: url(/PETNER/resources/img/hospital/hospital_home1.jpg) no-repeat center fixed;
         background-size: cover;
         min-height:500px;
         }

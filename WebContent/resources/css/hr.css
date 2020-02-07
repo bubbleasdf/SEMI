@@ -1,6 +1,6 @@
 /* QNA */
 .qna-banner-area {
-  background: url(/PETNER/resources/img/board/qna_home.jpg) no-repeat bottom fixed !important;
+  background: url(/PETNER/resources/img/board/qna_home.jpg) no-repeat bottom fixed;
   background-size: cover;
   min-height:420px;
  }
@@ -30,7 +30,7 @@
 
 /* notice */
 .notice-banner-area {
-  background: url(/PETNER/resources/img/board/notice-home3.jpg) no-repeat center fixed !important;
+  background: url(/PETNER/resources/img/board/notice-home3.jpg) no-repeat center fixed;
   background-size: cover;
   min-height:420px;
  }
