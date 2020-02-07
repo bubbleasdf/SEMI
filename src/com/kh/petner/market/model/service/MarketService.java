@@ -1,6 +1,7 @@
 package com.kh.petner.market.model.service;
 
 import com.kh.petner.market.model.dao.MarketDao;
+import com.kh.petner.market.model.vo.AdminMain;
 import com.kh.petner.market.model.vo.Market;
 import com.kh.petner.member.model.vo.Member;
 
@@ -129,6 +130,24 @@ public class MarketService {
 		
 		System.out.println("[service] 유저 리스트 종료");
 		return list;
+	}
+
+	/**
+	 * 권구현
+	 * 2020. 2. 7.
+	 * countMarket : 메인페이지에서 각 상점 카운트 세기
+	 * @return
+	 */
+	public AdminMain countMarket() {
+		AdminMain am = new AdminMain();
+		
+		Connection conn = getConnection();
+		
+		am = mDao.countMarket(conn);
+		
+		close(conn);
+		
+		return am;
 	}
 
 }

@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Properties;
 
+import com.kh.petner.market.model.vo.AdminMain;
 import com.kh.petner.market.model.vo.Market;
 import com.kh.petner.member.model.vo.Member;
 
@@ -262,6 +263,13 @@ public class MarketDao {
 			close(pstmt);
 		}
 		return list;
+	}
+
+	public AdminMain countMarket(Connection conn) {
+
+		
+		
+		return null;
 	}
 
 }

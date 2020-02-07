@@ -107,16 +107,18 @@
 		<!-- Nav Item - Charts -->
 		<li class="nav-item"><a class="nav-link"
 			href="/PETNER/views/admin/admin_market_add.jsp"> <i
-				class="fas fa-fw fa-chart-area"></i> <span>매장 추가</span></a></li>
+				class="fas fa-fw fa-chart-area"></i> 
+				<span>매장 추가</span></a></li>
 
 		<!-- Nav Item - Tables -->
 		<li class="nav-item"><a class="nav-link"
 			href="/PETNER/marketList.ad"> <i class="fas fa-fw fa-table"></i>
-				<span>매장 목록</span></a></li>
+			<span>매장 목록</span></a></li>
 
 		<!-- Nav Item - Tables -->
 		<li class="nav-item"><a class="nav-link"
-			href="/PETNER/userList.ad"> <i class="fas fa-fw fa-table"></i> <span>유저 목록</span></a></li>
+			href="/PETNER/userList.ad"> <i class="fas fa-fw fa-table"></i> 
+			<span>유저 목록</span></a></li>
 
 		<!-- Divider -->
 		<hr class="sidebar-divider d-none d-md-block">

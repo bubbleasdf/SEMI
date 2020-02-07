@@ -79,8 +79,6 @@
 											<td><button class="btn1" onclick="selectOne();">수정</button></a></td>
 										</tr>
 										<% } %>
-										
-
 									</tbody>
 								</table>
 							</div>
