@@ -7,13 +7,14 @@ public class MarketDetail implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -2824195414268411713L;
-	private String MarketId;          // 매장별 id
-	private String MarketCheck;       // 매장 특징
-	private String MarketPhone;       // 매장 연락번호
-	private String MarketPhotoDetail; // 매장 사진 3개
-	private String MarketSub;         // 매장가는길(지하철)
-	private String MarketBus;         // 매장가는길(버스)
-	private String MarketCar;         // 매장가는길(자가용)
+
+	private String marketId;          // 매장별 id
+	private String marketCheck;       // 매장 특징
+	private String marketPhone;       // 매장 연락번호
+	private String marketPhotoDetail; // 매장 사진 3개
+	private String marketSub;         // 매장가는길(지하철)
+	private String marketBus;         // 매장가는길(버스)
+	private String marketCar;         // 매장가는길(자가용)
 	
 	// 기본 생성자
 	public MarketDetail() {
@@ -24,84 +25,76 @@ public class MarketDetail implements Serializable{
 	public MarketDetail(String marketId, String marketCheck, String marketPhone, String marketPhotoDetail,
 			String marketSub, String marketBus, String marketCar) {
 		super();
-		MarketId = marketId;
-		MarketCheck = marketCheck;
-		MarketPhone = marketPhone;
-		MarketPhotoDetail = marketPhotoDetail;
-		MarketSub = marketSub;
-		MarketBus = marketBus;
-		MarketCar = marketCar;
+		marketId = marketId;
+		marketCheck = marketCheck;
+		marketPhone = marketPhone;
+		marketPhotoDetail = marketPhotoDetail;
+		marketSub = marketSub;
+		marketBus = marketBus;
+		marketCar = marketCar;
 	}
 
-	// getter & setter
 	public String getMarketId() {
-		return MarketId;
+		return marketId;
 	}
 
 	public void setMarketId(String marketId) {
-		MarketId = marketId;
+		this.marketId = marketId;
 	}
 
 	public String getMarketCheck() {
-		return MarketCheck;
+		return marketCheck;
 	}
 
 	public void setMarketCheck(String marketCheck) {
-		MarketCheck = marketCheck;
+		this.marketCheck = marketCheck;
 	}
 
 	public String getMarketPhone() {
-		return MarketPhone;
+		return marketPhone;
 	}
 
 	public void setMarketPhone(String marketPhone) {
-		MarketPhone = marketPhone;
+		this.marketPhone = marketPhone;
 	}
 
 	public String getMarketPhotoDetail() {
-		return MarketPhotoDetail;
+		return marketPhotoDetail;
 	}
 
 	public void setMarketPhotoDetail(String marketPhotoDetail) {
-		MarketPhotoDetail = marketPhotoDetail;
+		this.marketPhotoDetail = marketPhotoDetail;
 	}
 
 	public String getMarketSub() {
-		return MarketSub;
+		return marketSub;
 	}
 
 	public void setMarketSub(String marketSub) {
-		MarketSub = marketSub;
+		this.marketSub = marketSub;
 	}
 
 	public String getMarketBus() {
-		return MarketBus;
+		return marketBus;
 	}
 
 	public void setMarketBus(String marketBus) {
-		MarketBus = marketBus;
+		this.marketBus = marketBus;
 	}
 
 	public String getMarketCar() {
-		return MarketCar;
+		return marketCar;
 	}
 
 	public void setMarketCar(String marketCar) {
-		MarketCar = marketCar;
+		this.marketCar = marketCar;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-
-	// toString
 	@Override
 	public String toString() {
-		return "MarketDetail [MarketId=" + MarketId + ", MarketCheck=" + MarketCheck + ", MarketPhone=" + MarketPhone
-				+ ", MarketPhotoDetail=" + MarketPhotoDetail + ", MarketSub=" + MarketSub + ", MarketBus=" + MarketBus
-				+ ", MarketCar=" + MarketCar + "]";
+		return "MarketDetail [marketId=" + marketId + ", marketCheck=" + marketCheck + ", marketPhone=" + marketPhone
+				+ ", marketPhotoDetail=" + marketPhotoDetail + ", marketSub=" + marketSub + ", marketBus=" + marketBus
+				+ ", marketCar=" + marketCar + "]";
 	}
-	
-	
 
 }

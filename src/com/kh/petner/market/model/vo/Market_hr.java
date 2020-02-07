@@ -8,17 +8,18 @@ public class Market_hr implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = -1963761637303018573L;
-	private String MarketId;      // 매장별 id
-	private String MarketEmail;   // 매장 이메일
-	private String MarketPwd;     // 매장 비밀번호
-	private String MarketType;    // 매장 타입
-	private String MarketName;    // 매장 이름
-	private String MarketAddress; // 매장 주소
-	private String MarketTime;    // 매장 이용시간
-	private String MarketDayoff;  // 매장 휴무일
-	private String Marketscore;   // 매장 별점
-	private String MarketPhoto;   // 매장 사진
-	private Date Marketdate;      // 매장 등록일
+
+	private String marketId;      // 매장별 id
+	private String marketEmail;   // 매장 이메일
+	private String marketPwd;     // 매장 비밀번호
+	private String marketType;    // 매장 타입
+	private String marketName;    // 매장 이름
+	private String marketAddress; // 매장 주소
+	private String marketTime;    // 매장 이용시간(open~close)
+	private String marketDayoff;  // 매장 휴무일
+	private String marketscore;   // 매장 별점
+	private String marketPhoto;   // 매장 사진
+	private Date marketdate;      // 매장 등록일
 	
 	// 기본생성자
 	public Market_hr() {
@@ -29,16 +30,16 @@ public class Market_hr implements Serializable{
 	public Market_hr(String marketId, String marketEmail, String marketPwd, String marketType, String marketName,
 			String marketAddress, String marketTime, String marketDayoff, String marketscore, String marketPhoto) {
 		super();
-		MarketId = marketId;
-		MarketEmail = marketEmail;
-		MarketPwd = marketPwd;
-		MarketType = marketType;
-		MarketName = marketName;
-		MarketAddress = marketAddress;
-		MarketTime = marketTime;
-		MarketDayoff = marketDayoff;
-		Marketscore = marketscore;
-		MarketPhoto = marketPhoto;
+		marketId = marketId;
+		marketEmail = marketEmail;
+		marketPwd = marketPwd;
+		marketType = marketType;
+		marketName = marketName;
+		marketAddress = marketAddress;
+		marketTime = marketTime;
+		marketDayoff = marketDayoff;
+		marketscore = marketscore;
+		marketPhoto = marketPhoto;
 	}
 
 	// 매개변수 생성자(date있는거)
@@ -46,122 +47,115 @@ public class Market_hr implements Serializable{
 			String marketAddress, String marketTime, String marketDayoff, String marketscore, String marketPhoto,
 			Date marketdate) {
 		super();
-		MarketId = marketId;
-		MarketEmail = marketEmail;
-		MarketPwd = marketPwd;
-		MarketType = marketType;
-		MarketName = marketName;
-		MarketAddress = marketAddress;
-		MarketTime = marketTime;
-		MarketDayoff = marketDayoff;
-		Marketscore = marketscore;
-		MarketPhoto = marketPhoto;
-		Marketdate = marketdate;
+		marketId = marketId;
+		marketEmail = marketEmail;
+		marketPwd = marketPwd;
+		marketType = marketType;
+		marketName = marketName;
+		marketAddress = marketAddress;
+		marketTime = marketTime;
+		marketDayoff = marketDayoff;
+		marketscore = marketscore;
+		marketPhoto = marketPhoto;
+		marketdate = marketdate;
 	}
 
-	// getter & setter
 	public String getMarketId() {
-		return MarketId;
+		return marketId;
 	}
 
 	public void setMarketId(String marketId) {
-		MarketId = marketId;
+		this.marketId = marketId;
 	}
 
 	public String getMarketEmail() {
-		return MarketEmail;
+		return marketEmail;
 	}
 
 	public void setMarketEmail(String marketEmail) {
-		MarketEmail = marketEmail;
+		this.marketEmail = marketEmail;
 	}
 
 	public String getMarketPwd() {
-		return MarketPwd;
+		return marketPwd;
 	}
 
 	public void setMarketPwd(String marketPwd) {
-		MarketPwd = marketPwd;
+		this.marketPwd = marketPwd;
 	}
 
 	public String getMarketType() {
-		return MarketType;
+		return marketType;
 	}
 
 	public void setMarketType(String marketType) {
-		MarketType = marketType;
+		this.marketType = marketType;
 	}
 
 	public String getMarketName() {
-		return MarketName;
+		return marketName;
 	}
 
 	public void setMarketName(String marketName) {
-		MarketName = marketName;
+		this.marketName = marketName;
 	}
 
 	public String getMarketAddress() {
-		return MarketAddress;
+		return marketAddress;
 	}
 
 	public void setMarketAddress(String marketAddress) {
-		MarketAddress = marketAddress;
+		this.marketAddress = marketAddress;
 	}
 
 	public String getMarketTime() {
-		return MarketTime;
+		return marketTime;
 	}
 
 	public void setMarketTime(String marketTime) {
-		MarketTime = marketTime;
+		this.marketTime = marketTime;
 	}
 
 	public String getMarketDayoff() {
-		return MarketDayoff;
+		return marketDayoff;
 	}
 
 	public void setMarketDayoff(String marketDayoff) {
-		MarketDayoff = marketDayoff;
+		this.marketDayoff = marketDayoff;
 	}
 
 	public String getMarketscore() {
-		return Marketscore;
+		return marketscore;
 	}
 
 	public void setMarketscore(String marketscore) {
-		Marketscore = marketscore;
+		this.marketscore = marketscore;
 	}
 
 	public String getMarketPhoto() {
-		return MarketPhoto;
+		return marketPhoto;
 	}
 
 	public void setMarketPhoto(String marketPhoto) {
-		MarketPhoto = marketPhoto;
+		this.marketPhoto = marketPhoto;
 	}
 
 	public Date getMarketdate() {
-		return Marketdate;
+		return marketdate;
 	}
 
 	public void setMarketdate(Date marketdate) {
-		Marketdate = marketdate;
+		this.marketdate = marketdate;
 	}
 
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-	
-	// toString
 	@Override
 	public String toString() {
-		return "Market_hr [MarketId=" + MarketId + ", MarketEmail=" + MarketEmail + ", MarketPwd=" + MarketPwd
-				+ ", MarketType=" + MarketType + ", MarketName=" + MarketName + ", MarketAddress=" + MarketAddress
-				+ ", MarketTime=" + MarketTime + ", MarketDayoff=" + MarketDayoff + ", Marketscore=" + Marketscore
-				+ ", MarketPhoto=" + MarketPhoto + ", Marketdate=" + Marketdate + "]";
+		return "Market_hr [marketId=" + marketId + ", marketEmail=" + marketEmail + ", marketPwd=" + marketPwd
+				+ ", marketType=" + marketType + ", marketName=" + marketName + ", marketAddress=" + marketAddress
+				+ ", marketTime=" + marketTime + ", marketDayoff=" + marketDayoff + ", marketscore=" + marketscore
+				+ ", marketPhoto=" + marketPhoto + ", marketdate=" + marketdate + "]";
 	}
-	
-	
+
 	
 	
 }
