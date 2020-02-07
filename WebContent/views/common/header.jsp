@@ -19,6 +19,8 @@
 			<link rel="stylesheet" href="/PETNER/resources/css/font-awesome.min.css">
 			<link rel="stylesheet" href="/PETNER/resources/css/bootstrap.css" type="text/css">
 			<link rel="stylesheet" href="/PETNER/resources/css/main.css" type="text/css">
+			<!-- <link rel="stylesheet" href="/PETNER/resources/css/main_hyon.css" type="text/css"> -->
+			
 			
 			<script src="/PETNER/resources/js/vendor/jquery-3.4.1.min.js" type="text/javascript"></script>
 			<script src="/PETNER/resources/js/vendor/bootstrap.min.js" type="text/javascript"></script>

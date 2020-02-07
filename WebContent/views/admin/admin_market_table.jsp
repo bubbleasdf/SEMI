@@ -2,30 +2,16 @@
 	pageEncoding="UTF-8" import="com.kh.petner.market.model.vo.Market, java.util.*"%>
 <%
 	ArrayList<Market> list = (ArrayList<Market>)request.getAttribute("list");
-	/* Member m = new Member(); */
 %>	
 	
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Mobile Specific Meta -->
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Favicon-->
-<link rel="shortcut icon" href="img/small_logo.jpg">
-<!-- Author Meta -->
-<meta name="author" content="colorlib">
-<!-- Meta Description -->
-<meta name="description" content="">
-<!-- Meta Keyword -->
-<meta name="keywords" content="">
-<!-- meta character set -->
-<meta charset="UTF-8">
-<!-- Site Title -->
-<title>P e t n e r +</title>
-
-<!-- Custom fonts for this template-->
+	<!-- <style>
+		#dataTable_filter{
+			text-align:right; !important;
+		}
+	</style> --> <!-- search 부분을 오른쪽으로 밀어주고 싶은데 미치겠네?ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ -->
 
 </head>
 <body>
@@ -44,8 +30,6 @@
 
 			<!-- Main Content -->
 			<div id="content">
-
-
 
 				<!-- Begin Page Content -->
 				<div class="container-fluid">
@@ -92,7 +76,7 @@
 											<td><%= market.getMarketType() %></td>
 											<td><%= market.getEnDate() %></td>
 											<!-- <td><a href="admin_market_modify.jsp"><button>수정</button></a></td> -->
-											<td><button onclick="selectOne();">수정</button></a></td>
+											<td><button class="btn1" onclick="selectOne();">수정</button></a></td>
 										</tr>
 										<% } %>
 										
@@ -120,14 +104,21 @@
 	<%@ include file="/views/common/footer.jsp"%>
 	
 		<script>
-			$(function selectOne(){
+	        $(function selectOne(){
+	           $(".btn1").click(function(){
+	              //console.log($(this).parent().children().eq(0).text());
+	              var marketId = $(this).parent().parent().children().eq(0).text();
+	              location.href="<%=request.getContextPath()%>/selectOne.ad?marketId=" + marketId;
+	           });
+	        });
+			<%-- $(function selectOne(){
 				
 				$("#dataTable td").click(function(){
 					//console.log($(this).parent().children().eq(0).text());
 					var marketId = $(this).parent().children().eq(0).text();
 					location.href="<%=request.getContextPath()%>/selectOne.ad?marketId=" + marketId;
 				});
-			});
+			}); --%>
 		</script>
 	
 

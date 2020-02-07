@@ -4,26 +4,36 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<!-- Admin Table용  css,js -->
-<link href="/PETNER/resources/vendor/fontawesome-free/css/all.css"
-	rel="stylesheet" type="text/css">
-<!-- <link
-	href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-	rel="stylesheet">-->
-<link href="/PETNER/resources/css/sb-admin-2.min.css" rel="stylesheet">
 
-<script
-	src="/PETNER/resources/vendor/datatables/jquery.dataTables.min.js"></script>
-<script
-	src="/PETNER/resources/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-<script src="/PETNER/resources/js/demo/datatables-demo.js"></script>
-<!-- Admin Table용 종료 -->
+  <!-- Custom fonts for this template -->
+  <link href="/PETNER/resources/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template admin페이지 CSS-->
+  <link href="/PETNER/resources/css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page 테이블 CSS --> 
+  <link href="/PETNER/resources/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+  <!-- Core plugin JavaScript-->
+  <script src="/PETNER/resources/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="/PETNER/resources/js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="/PETNER/resources/vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="/PETNER/resources/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="/PETNER/resources/js/demo/datatables-demo.js"></script>
+
 </head>
 <body>
 
-	<%@ include file="/views/common/hyun.jsp"%>
-
+<%-- 	<%@ include file="/views/common/hyun.jsp"%>
+ --%>
 
 	<!-- Sidebar -->
 	<ul
@@ -37,7 +47,8 @@
 			<div class="sidebar-brand-icon rotate-n-15">
 				<i class="fas fa-laugh-wink"></i>
 			</div>
-			<div class="sidebar-brand-text mx-3">관리자페이지</div>
+			<div class="sidebar-bran
+			d-text mx-3">관리자페이지</div>
 		</a>
 
 		<!-- Divider -->
@@ -95,8 +106,8 @@
 		<!-- Nav Item - Pages Collapse Menu -->
 		<!-- Nav Item - Charts -->
 		<li class="nav-item"><a class="nav-link"
-			href="/PETNER/views/admin/admin_market_add.jsp"> <i class="fas fa-fw fa-chart-area"></i>
-				<span>매장 추가</span></a></li>
+			href="/PETNER/views/admin/admin_market_add.jsp"> <i
+				class="fas fa-fw fa-chart-area"></i> <span>매장 추가</span></a></li>
 
 		<!-- Nav Item - Tables -->
 		<li class="nav-item"><a class="nav-link"
@@ -105,8 +116,7 @@
 
 		<!-- Nav Item - Tables -->
 		<li class="nav-item"><a class="nav-link"
-			href="/PETNER/views/admin/admin_user_table.jsp"> <i class="fas fa-fw fa-table"></i> 
-					<span>유저목록</span></a></li>
+			href="/PETNER/userList.ad"> <i class="fas fa-fw fa-table"></i> <span>유저 목록</span></a></li>
 
 		<!-- Divider -->
 		<hr class="sidebar-divider d-none d-md-block">

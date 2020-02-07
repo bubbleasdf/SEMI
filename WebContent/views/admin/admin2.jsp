@@ -69,7 +69,7 @@
 								<div class="row no-gutters align-items-center">
 									<div class="col mr-2">
 										<div
-											class="text-xs font-weight-bold text-success text-uppercase mb-1">등록된
+											class="text-xs font-weight-bold text-info text-uppercase mb-1">등록된
 											미용 개수</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">1</div>
 									</div>
@@ -87,7 +87,7 @@
 								<div class="row no-gutters align-items-center">
 									<div class="col mr-2">
 										<div
-											class="text-xs font-weight-bold text-success text-uppercase mb-1">등록된
+											class="text-xs font-weight-bold text-warning text-uppercase mb-1">등록된
 											병원 개수</div>
 										<div class="h5 mb-0 font-weight-bold text-gray-800">4</div>
 									</div>
