@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import com.kh.petner.market.model.vo.Market;
+import com.kh.petner.member.model.vo.Member;
 
 public class MarketDao {
 	
@@ -71,12 +72,12 @@ public class MarketDao {
 	 * @param conn
 	 * @return
 	 */
-	public ArrayList<Market> selectList(Connection conn) {
+	public ArrayList<Market> selectMarketList(Connection conn) {
 		System.out.println("[Dao] selectList() 시작");
 		ArrayList<Market> list = null;
 		PreparedStatement pstmt = null;
 		ResultSet rset = null;
-		String sql = prop.getProperty("selectList");
+		String sql = prop.getProperty("selectMarketList");
 		try {
 			pstmt = conn.prepareStatement(sql);
 			
@@ -108,7 +109,7 @@ public class MarketDao {
 			close(rset);
 			close(pstmt);
 		}
-		System.out.println("[Dao] selectList() 종료");
+		System.out.println("[Dao] selectMarketList() 종료");
 
 		return list;
 	}
@@ -223,6 +224,44 @@ public class MarketDao {
 		}
 
 		return result;
+	}
+
+	/**
+	 * 유저 리스트 출력
+	 * @param conn
+	 * @return
+	 */
+	public ArrayList<Member> selectUserList(Connection conn) {
+		ArrayList<Member> list = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		String sql = prop.getProperty("selectUserList");
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			
+			rset = pstmt.executeQuery();
+			
+			list = new ArrayList<>();
+			
+			while(rset.next()) {
+				Member m = new Member();
+				m.setUserName(rset.getString("USER_NAME"));
+				m.setUserEmail(rset.getString("USER_EMAIL"));
+				m.setUserPhone(rset.getString("USER_PHONE"));
+				m.setEnDate(rset.getDate("USER_ENDATE"));
+				
+				list.add(m);
+			}
+
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close(rset);
+			close(pstmt);
+		}
+		return list;
 	}
 
 }

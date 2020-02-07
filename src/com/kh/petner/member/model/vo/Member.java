@@ -1,5 +1,7 @@
 package com.kh.petner.member.model.vo;
 
+import java.sql.Date;
+
 public class Member {
 	
 	
@@ -12,8 +14,11 @@ public class Member {
 													// 일의 자리는 일반 유저가 할 수 있는 것의 권한을 지정
 													// 십의 자리는 중간 관리자 권한 지정
 													// 백의 자리는 관리자 권한 지정
+	private Date enDate;
 	
 	
+
+
 	public Member() { //기본 생성자
 	}
 
@@ -37,7 +42,6 @@ public class Member {
 	public String getUserEmail() {
 		return userEmail;
 	}
-
 	
 
 	public void setUserEmail(String userEmail) {
@@ -74,6 +78,14 @@ public class Member {
 
 	public void setUserRoles(int userRoles) {
 		this.userRoles = userRoles;
+	}
+	
+	public Date getEnDate() {
+		return enDate;
+	}
+
+	public void setEnDate(Date enDate) {
+		this.enDate = enDate;
 	}
 
 	@Override

@@ -2,6 +2,8 @@ package com.kh.petner.market.model.service;
 
 import com.kh.petner.market.model.dao.MarketDao;
 import com.kh.petner.market.model.vo.Market;
+import com.kh.petner.member.model.vo.Member;
+
 import static com.kh.petner.common.JDBCTemplate.*;
 
 import java.sql.Connection;
@@ -38,17 +40,17 @@ public class MarketService {
 	 * 상점 리스트 불러오기
 	 * @return
 	 */
-	public ArrayList<Market> selectList() {
-		System.out.println("[Service] selectList() 시작");
+	public ArrayList<Market> selectMarketList() {
+		System.out.println("[Service] selectMarketList() 시작");
 
 		ArrayList<Market> list = new ArrayList<>();
 		
 		Connection conn = getConnection();
 		
-		list = mDao.selectList(conn);
+		list = mDao.selectMarketList(conn);
 		
 		close(conn);
-		System.out.println("[Service] selectList() 종료");
+		System.out.println("[Service] selectMarketList() 종료");
 
 		return list;
 	}
@@ -110,6 +112,23 @@ public class MarketService {
 		close(conn);
 		
 		return result;
+	}
+
+	/**
+	 * 유저 리스트 생성
+	 * @return
+	 */
+	public ArrayList<Member> selectUserList() {
+		System.out.println("[Service] 유저 리스트 시작");
+		ArrayList<Member> list = new ArrayList<>();
+		Connection conn = getConnection();
+		
+		list = mDao.selectUserList(conn);
+		
+		close(conn);
+		
+		System.out.println("[service] 유저 리스트 종료");
+		return list;
 	}
 
 }

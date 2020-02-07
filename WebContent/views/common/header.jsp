@@ -19,6 +19,8 @@
 			<link rel="stylesheet" href="/PETNER/resources/css/font-awesome.min.css">
 			<link rel="stylesheet" href="/PETNER/resources/css/bootstrap.css" type="text/css">
 			<link rel="stylesheet" href="/PETNER/resources/css/main.css" type="text/css">
+			<!-- <link rel="stylesheet" href="/PETNER/resources/css/main_hyon.css" type="text/css"> -->
+			
 			
 			<script src="/PETNER/resources/js/vendor/jquery-3.4.1.min.js" type="text/javascript"></script>
 			<script src="/PETNER/resources/js/vendor/bootstrap.min.js" type="text/javascript"></script>
@@ -99,9 +101,9 @@
 						<li><a href="/PETNER/views/hospital/hospital_home.jsp">HOSPITAL</a>
 						</li>
 						<li><a href="/PETNER/views/beauty/beauty_home.jsp">BEAUTY</a></li>
-						<li class="menu-has-children"><a href="/PETNER/views/board/notice.jsp">NOTICE</a>
+						<li class="menu-has-children"><a>NOTICE</a>
 							<ul>
-								<li><a href="/PETNER/views/board/notice.jsp">NOTICE</a></li>
+								<li><a href="/PETNER/NoticeList.go">NOTICE</a></li>
 								<li><a href="/PETNER/views/board/petner_faq.jsp">FAQ</a></li>
 								<li><a href="/PETNER/views/board/qna.jsp">Q&A</a></li>
 							</ul>

@@ -37,7 +37,7 @@ public class MarketListServlet extends HttpServlet {
 		
 		MarketService ms = new MarketService();
 		
-		list = ms.selectList();
+		list = ms.selectMarketList();
 		for(Market m : list) {
 			System.out.println(m);
 		}
