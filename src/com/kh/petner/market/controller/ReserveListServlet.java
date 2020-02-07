@@ -1,6 +1,7 @@
 package com.kh.petner.market.controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -8,20 +9,19 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.kh.petner.market.model.service.MarketService;
-import com.kh.petner.market.model.vo.AdminMain;
+import com.kh.petner.member.model.service.MemberService;
 
 /**
- * Servlet implementation class AdminStartServlet
+ * Servlet implementation class ReserveListServlet
  */
-@WebServlet("/adStart.ad")
-public class AdminStartServlet extends HttpServlet {
+@WebServlet("/reserveList.ad")
+public class ReserveListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public AdminStartServlet() {
+    public ReserveListServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,19 +30,24 @@ public class AdminStartServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		AdminMain am = new MarketService().countMarket();
+		ArrayList<Reserve> list = new ArrayList<>();
+		
+		MemberService ms = new MemberService();
+		
+		list = ms.reserveList();
 		
 		String page = "";
 		
-		if(am != null) {
-			page = "views/admin/admin2.jsp";
-			request.setAttribute("am", am);
+		if(list != null) {
+			page = "views/admin/admin_reserve_table.jsp";
+			request.setAttribute("list", list);
 		} else {
 			page = "views/common/errorPage.jsp";
-			request.setAttribute("msg", "메인 못불러옴 ");
+			request.setAttribute("msg", "예약 목록을 불러오는데 실패했습니다. 관리자를 찾아주는데 관리자는 나잖아?");
 		}
-
 		request.getRequestDispatcher(page).forward(request, response);
+
+	
 	}
 
 	/**

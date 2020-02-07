@@ -43,7 +43,7 @@
 		<!-- Sidebar - Brand -->
 		<a
 			class="sidebar-brand d-flex align-items-center justify-content-center"
-			href="/PETNER/views/admin/admin2.jsp">
+			href="/PETNER/adStart.ad">
 			<div class="sidebar-brand-icon rotate-n-15">
 				<i class="fas fa-laugh-wink"></i>
 			</div>
@@ -119,6 +119,11 @@
 		<li class="nav-item"><a class="nav-link"
 			href="/PETNER/userList.ad"> <i class="fas fa-fw fa-table"></i> 
 			<span>유저 목록</span></a></li>
+
+		<!-- Nav Item - Tables -->
+		<li class="nav-item"><a class="nav-link"
+			href="/PETNER/reserveList.ad"> <i class="fas fa-fw fa-table"></i> 
+			<span>예약 목록</span></a></li>
 
 		<!-- Divider -->
 		<hr class="sidebar-divider d-none d-md-block">

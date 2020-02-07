@@ -13,6 +13,7 @@ import java.util.Properties;
 
 import com.kh.petner.market.model.vo.AdminMain;
 import com.kh.petner.market.model.vo.Market;
+import com.kh.petner.member.model.dao.Reserve;
 import com.kh.petner.member.model.vo.Member;
 
 public class MarketDao {
@@ -265,11 +266,69 @@ public class MarketDao {
 		return list;
 	}
 
+	/**
+	 * Admin 메인 페이지 시작하기위한 페이지(마켓 숫자 각각 받아오기)
+	 * @param conn
+	 * @return
+	 */
 	public AdminMain countMarket(Connection conn) {
-
+		AdminMain am = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
 		
+		String sql = prop.getProperty("countMarket");
 		
-		return null;
+		try {
+			pstmt = conn.prepareStatement(sql);
+			rset = pstmt.executeQuery();
+			
+			if(rset.next()) {
+				am = new AdminMain();
+				am.setSumMarket(rset.getInt(1));
+				am.setHotel(rset.getInt(2));
+				am.setBeauty(rset.getInt(3));
+				am.setHospital(rset.getInt(4));
+				am.setSumMember(rset.getInt(5));
+			}
+				
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close(rset);
+			close(pstmt);
+		}
+		
+		return am;
 	}
+	
+	
+
+	/**
+	 * 예약 리스트 출력용
+	 * @param conn
+	 * @return
+	 */
+	public ArrayList<Reserve> reserveList(Connection conn) {
+		ArrayList<Reserve> list = null;
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		
+		String sql = prop.getProperty("reserveList");
+		
+		try {
+			pstmt = conn.prepareStatement(sql);
+			
+			
+			
+		} catch(SQLException e) {
+			e.printStackTrace();
+		} finally {
+			close(rset);
+			close(pstmt);
+		}
+		
+		return list;
+	}
+
 
 }

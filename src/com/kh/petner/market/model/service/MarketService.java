@@ -3,6 +3,7 @@ package com.kh.petner.market.model.service;
 import com.kh.petner.market.model.dao.MarketDao;
 import com.kh.petner.market.model.vo.AdminMain;
 import com.kh.petner.market.model.vo.Market;
+import com.kh.petner.member.model.service.Reserve;
 import com.kh.petner.member.model.vo.Member;
 
 import static com.kh.petner.common.JDBCTemplate.*;
@@ -150,4 +151,23 @@ public class MarketService {
 		return am;
 	}
 
+	/**
+	 * 권구현
+	 * 2020.02.07
+	 * 호텔 예약 목록을 테이블로 보여줍니다.
+	 * @return
+	 */
+	public ArrayList<Reserve> reserveList() {
+		ArrayList<Reserve> list = new ArrayList<>();
+		
+		Connection conn = getConnection();
+		
+		list = mDao.reserveList(conn);
+		
+		close(conn);
+		
+		return list;
+	}
+
+	
 }
