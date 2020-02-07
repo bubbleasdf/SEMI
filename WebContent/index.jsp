@@ -18,7 +18,7 @@
 </head>
 <style>
 	.home-banner-area {
-  background: url(/PETNER/resources/img/dogcat.jpg) no-repeat center fixed !important;
+  background: url(/PETNER/resources/img/dogcat.jpg) no-repeat center fixed;
   background-size: cover; }
 </style>
 

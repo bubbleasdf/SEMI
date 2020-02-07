@@ -47,7 +47,7 @@
 		<!--######## End banner Area ########-->
 
 	<!--about image-->
-	<div class="image_wrap">
+	<div class="image_wrap" style="text-align: center;">
 		
 		<img src="/PETNER/resources/img/about/about_page.jpg">
 
